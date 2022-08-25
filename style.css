@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --blue-color: #438BCA;
+    --yellow-color: #EFCE53;
+    --back-div-color: #F3F3F3;
+    --fonts-color: #3C3C3C;
+    --desc-color: #606060;
+}
+
+/* Configs Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: var(--fonts-color);
+}
+
+p {
+    color: var(--desc-color);
+}
+
+.center {
+    text-align: center;
+}
+
+.center h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-bottom: 30px;
+}
+
+.center p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 60px;
+}
+/* Fim Configs Globais */
+
+/* Inicio Header */
+header {
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 8vh;
+/*     position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0; */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 30px;
+}
+
+li a {
+    color: var(--fonts-color);
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+li a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 850px){
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        height: 14vh;
+    }
+    .nav-list {
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+    .nav-list li{
+        margin-left: 14px;
+    }
+}
+
+.banner img {
+    width: 100%;
+    /*margin-top: 30px;*/
+    margin-bottom: 90px;
+}
+/* Fim Header */
+
+/* Inicio Best Sellers */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 120px;
+}
+
+.cards-best {
+    width: 269.02px;
+    height: 560px;
+    background-color: #FFF;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.cards-best img{
+    width: 100%;
+}
+
+.cards-text {
+    position: relative;
+    margin: 0 auto;
+}
+
+.cards-text .sizes{
+    border: 1px solid black;
+    border-radius: 50px;
+    max-width: fit-content;
+    margin: 15px auto;
+    padding: 2px 4px;
+    color: black;
+    text-align: center;
+}
+
+.cards-text h3{
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.cards-text p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.cards-text button{
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: var(--blue-color);
+    border-radius: 7px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 84% auto;
+}
+
+.cards-text button:hover {
+    background-color: #2d80c8;
+    color: #fff;
+}
+
+@media screen and (max-width: 1280px){
+    .container-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .container-cards {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+/* Fim Best Sellers */
+
+/* Inicio Differentials */
+.differentials {
+    width: 100%;
+    background-color: var(--back-div-color);
+    margin-bottom: 120px;
+    padding-bottom: 90px;
+}
+
+.differentials h2{
+    text-align: center;
+    padding-top: 90px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #E8B909;
+}
+
+.container-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.icons {
+    width: 100%;
+    margin: 30px 90px;
+    text-align: center;
+}
+
+.icons-text h3{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.icons-text p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 800px){
+    .differentials {
+        width: 100%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 120px;
+    }
+
+    .container-icons {
+        width: 300px;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .icons {
+        margin: 10px;
+        padding: 10px;
+        max-width: 300px;
+    }
+}
+/* Fim Differentials */
+
+/* Inicio Solutions */
+.container-solutions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 120px;
+}
+
+.cards-solutions {
+    width: 396.55px;
+    padding-bottom: 26px;
+    background: #F8F8F8;
+    text-align: center;
+    margin: 0 90px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cards-solutions img {
+    width: 100%;
+}
+
+.solutions h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.36px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.cards-text-solutions h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.36px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.cards-text-solutions p {
+    max-width: 370px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.38px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1005px){
+    .container-solutions {
+        display: grid;
+    }
+}
+
+/* Circle Products*/
+.container-spans {
+    position: relative;
+    display: flex;
+    padding-top: 20px;
+}
+
+.container-spans .spans{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.container-spans img {
+    border-radius: 100px;
+}
+/* Fim Solutions */
+
+/*Inicio Slider Products*/
+.slide-container {
+    margin-bottom: 120px;
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px;
+}
+
+.slide-content {
+    padding: 45px 0;
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .card-content{
+    height: 290px;
+    width: 290px;
+    margin: 0 auto;
+    background-color: #FFF;
+    position: relative;
+}
+
+.card-image {
+    display: block;
+    width: 290px;
+}
+
+.card-image img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sizes{
+    border: 1px solid black;
+    color: #000;
+    border-radius: 50px;
+    max-width: fit-content;
+    margin: 15px auto;
+    padding: 2px 4px;
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--fonts-color);
+}
+
+.description {
+    padding: 15px 4px;
+    font-size: 16px;
+    color: var(--desc-color);
+    text-align: center;
+}
+
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: var(--blue-color);
+    border-radius: 7px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 84% auto;
+}
+
+.button:hover {
+    background-color: #2773b6;
+}
+
+.swiper-navBtn {
+    color: var(--blue-color);
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #2773b6;
+}
+
+/* .swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.swiper-button-next {
+    color: var(--blue-color);
+    right: 0;
+}
+
+.swiper-button-prev {
+    color: var(--blue-color);
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color:  var(--yellow-color);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background-color:  var(--yellow-color);
+}*/
+
+@media screen and (max-width: 768px){
+    .slide-content {
+        margin: 0 10px;
+    }
+
+}
+/*Fim Slider Products*/
+
+/* Inicio Clients*/
+.container-clients {
+    
+    width: 100%;
+    padding-bottom: 90px;
+}
+
+.clients {
+    text-align: center;
+    background-color: var(--back-div-color);
+    margin-bottom: 120px;
+}
+
+.clients h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 90px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.clients img {
+    margin: 0 30px;
+}
+/* Fim Clients*/
+
+/* Inicio Production */
+.production {
+    margin-bottom: 120px;
+    background-color: var(--yellow-color);
+}
+
+.production .center {
+    padding-top: 60px;
+}
+
+.video-production {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.video-production iframe {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.482);
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1020px){
+    .video-production iframe {
+        max-width: 90%;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 765px){
+    .video-production iframe {
+        max-width: 90%;
+        height: 270px;
+    }
+}
+/* Fim Production */
+
+/* Inicio Contact & Map */
+.container-contact {
+    max-width: 1536px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    margin-right: 160px;
+}
+
+/* Formulário */
+.text-forms {
+    text-align: center;
+}
+
+.text-forms h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-bottom: 30px;
+}
+
+.text-forms p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+form {
+    padding: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: var(--fonts-color);
+}
+
+input, textarea {
+    border-radius: 2px;
+    height: 40px;   
+    font-size: 14px;
+    width: 300px;
+    border: 1px solid #000;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), white);
+}
+
+input:focus, textarea:focus {
+    border: 1px solid var(--desc-color);
+}
+
+input[type=text],
+input[type=number], 
+input[type=email] {
+    outline: 0;
+    padding-left: 18px;
+    color: black;
+    width: 100%;
+}
+
+textarea {  
+    outline: 0;
+    padding-top: 8px;
+    padding-left: 18px;
+    width: 100%;
+    vertical-align: top;
+    height: 4em;
+    resize: vertical;
+}
+
+.button-form button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: var(--blue-color);
+    border-radius: 7px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-form button:hover {
+    background-color: #2773b6;
+}
+
+/* Mapa */
+.map {
+    display: block;
+}
+
+.map img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px){
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact {
+        margin: 20px 0;
+    }
+}
+
+.objective-text {
+    margin-top: 60px;
+    margin-bottom: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+.objective-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 2.5em;
+}
+
+.objective-text p {
+    line-height: 1.4em;
+}
+/* Fim Contact & Map */
+
+/* Inicio Location */
+.location {
+    background-color: var(--back-div-color);
+    margin-bottom: 120px;
+}
+
+.location .center {
+    padding-top: 90px;
+}
+
+.container-maps {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container-maps iframe {
+    max-width: 100%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.286);
+}
+
+@media screen and (max-width: 1150px){
+    .container-maps iframe {
+        max-width: 90%;
+    }
+}
+/* Fim Location */
+
+/*Inicio Contatos Map*/
+.contact-map {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+i {
+    color: var(--yellow-color);
+    width: 20px;
+}
+
+.contact-map span {
+    margin-left: 15px;
+    display: inline-block;
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*Fim Contatos Map*/
+
+/*Inicio Footer*/
+footer {
+    background-color: var(--blue-color);
+    width: 100%;
+}
+
+.content-footer {
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-text {
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-text p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-contact h2,
+.footer-products h2,
+.footer-text h2 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-products {
+    text-align: center;
+}
+
+.footer-products h2 {
+    color: #fff;
+}
+
+.footer-products a {
+    color: #fff;
+}
+
+.footer-products ul li {
+    list-style-type: none;
+    padding-bottom: 8px;
+}
+
+.footer-contact {
+    font-size: 16px;
+    text-align: center;
+    display: grid;
+}
+
+.footer-contact span {
+    padding-bottom: 8px;
+}
+
+.footer-products li::before {
+    content: '•';
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 840px){
+    .footer-contact,
+    .footer-products {
+        margin-top: 24px;
+    }
+
+    .content-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Fim Footer*/

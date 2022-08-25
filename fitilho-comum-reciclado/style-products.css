@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --blue-color: #438BCA;
+    --yellow-color: #EFCE53;
+    --back-div-color: #F3F3F3;
+    --fonts-color: #3C3C3C;
+    --desc-color: #606060;
+}
+
+/* Configs Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: var(--fonts-color);
+}
+
+p {
+    color: var(--desc-color);
+}
+
+.center {
+    text-align: center;
+}
+
+.center h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-bottom: 30px;
+}
+
+.center p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 60px;
+}
+/* Fim Configs Globais */
+
+/* Inicio Header */
+header {
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 8vh;
+/*     position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0; */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 30px;
+}
+
+li a {
+    color: var(--fonts-color);
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+li a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 850px){
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        height: 14vh;
+    }
+    .nav-list {
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+    .nav-list li{
+        margin-left: 14px;
+    }
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 90px;
+}
+/* Fim Header */
+
+/* Incio Product Info */
+.container {
+    position: relative;
+}
+
+.product-info {
+    display: flex;
+    justify-content: center;
+}
+
+.product-info img {
+    float: left;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.container .center {
+    margin-bottom: 60px;
+}
+
+.product-info p {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.sizes{
+    border: 1px solid black;
+    border-radius: 50px;
+    color: #000;
+    max-width: fit-content;
+    padding: 2px 4px;
+    text-align: center;
+}
+/* Fim Product Info */
+
+/* Incio Form */
+
+.contact {
+    max-width: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
+/*     position: absolute;
+    left: 46%;
+    top: 80%; */
+}
+
+form {
+    padding: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+input, textarea {
+    border-radius: 2px;
+    height: 40px;   
+    font-size: 14px;
+    width: 300px;
+    border: 1px solid #000;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), white);
+}
+
+input:focus, textarea:focus {
+    border: 1px solid var(--desc-color);
+}
+
+input[type=text] {
+    padding-left: 18px;
+    color: black;
+    width: 100%;
+}
+
+input#email {
+    float: left;
+    margin-right: 20%;
+}
+
+input[type=number], 
+input[type=email] {
+    outline: 0;
+    padding-left: 18px;
+    color: black;
+    width: 40%;
+}
+
+textarea {  
+    outline: 0;
+    padding-top: 8px;
+    padding-left: 18px;
+    width: 100%;
+    vertical-align: top;
+    height: 4em;
+    resize: vertical;
+}
+
+.button-form button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: var(--blue-color);
+    border-radius: 7px;
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-form button:hover {
+    background-color: #2773b6;
+}
+
+.button-whats button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #3BD12A;
+    border-radius: 7px;
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-whats button:hover {
+    background-color: #28bd17;
+}
+
+/* Incio Form */
