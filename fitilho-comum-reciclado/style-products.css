@@ -111,7 +111,8 @@ li a:hover {
 
 /* Incio Product Info */
 .container {
-    position: relative;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .product-info {
@@ -120,14 +121,16 @@ li a:hover {
 }
 
 .product-info img {
-    float: left;
     border: 1px solid black;
     width: 250px;
     height: 250px;
 }
 
-.container .center {
+.center {
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-info p {
@@ -146,14 +149,14 @@ li a:hover {
 /* Fim Product Info */
 
 /* Incio Form */
-
 .contact {
-    max-width: 50%;
-    border: 1px solid black;
-    margin: 0 auto;
+    margin: -8% 44%;
+    max-width: 650px;
+    width: 100%;
+    padding-bottom: 120px;
 /*     position: absolute;
-    left: 46%;
-    top: 80%; */
+    left: 43.7%;
+    top: 68%; */
 }
 
 form {
@@ -181,11 +184,12 @@ input[type=text] {
     padding-left: 18px;
     color: black;
     width: 100%;
+    outline: 0;
 }
 
 input#email {
-    float: left;
-    margin-right: 20%;
+    float: right;
+    margin-left: 20%;
 }
 
 input[type=number], 
@@ -204,6 +208,10 @@ textarea {
     vertical-align: top;
     height: 4em;
     resize: vertical;
+}
+
+.container-button {
+    position: relative;
 }
 
 .button-form button {
@@ -232,10 +240,50 @@ textarea {
     width: 30%;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.button-whats button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .button-whats button:hover {
     background-color: #28bd17;
+}
+
+.numbers {
+    text-align: right;
+    margin: -8% 0;
+}
+
+.numbers span{
+    color: var(--desc-color);
+}
+
+@media screen and (max-width: 1172px){
+    .contact {
+        width: 100%;
+        margin: 30px auto;
+    }
+    .product-info img {
+        margin-left: 10px;
+    }
+
+    .text p{
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .numbers {
+        display: inline-block;
+        margin-top: 15px;
+    }
 }
 
 /* Incio Form */

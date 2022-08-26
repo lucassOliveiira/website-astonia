@@ -314,6 +314,10 @@ li a:hover {
     .container-solutions {
         display: grid;
     }
+
+    .cards-solutions {
+        margin: 16px;
+    }
 }
 
 /* Circle Products*/
@@ -466,13 +470,11 @@ li a:hover {
     .slide-content {
         margin: 0 10px;
     }
-
 }
 /*Fim Slider Products*/
 
 /* Inicio Clients*/
 .container-clients {
-    
     width: 100%;
     padding-bottom: 90px;
 }
@@ -493,6 +495,12 @@ li a:hover {
 
 .clients img {
     margin: 0 30px;
+}
+
+@media screen and (max-width: 800px){
+    .clients img {
+        margin: 20px 15px;
+    }
 }
 /* Fim Clients*/
 
