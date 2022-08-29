@@ -59,7 +59,7 @@ nav {
     align-items: center;
     background-color: #fff;
     height: 8vh;
-/*     position: fixed;
+/*  position: fixed;
     width: 100%;
     z-index: 1;
     top: 0;
@@ -419,6 +419,78 @@ i {
     color: var(--yellow-color);
     width: 20px;
 }
+
+/*Inicio Button Whatsapp*/
+.whats-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #3BD12A;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 44px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.whats-button::before,
+.whats-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    border: 2px solid #3BD12A;
+    animation: animate-button-whats 1.5s linear infinite;
+}
+
+@keyframes animate-button-whats {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+.whats-icon {
+    color: #fff;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 670px){
+    .whats-button {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #3BD12A;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 38px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+    }
+
+    .whats-icon {
+        color: #fff;
+        margin-top: 7px;
+        margin-right: 12px;
+    }
+}
+/*Inicio Button Whatsapp*/
 
 /*Inicio Footer*/
 footer {

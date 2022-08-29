@@ -58,12 +58,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
-    height: 8vh;
-/*     position: fixed;
+    height: 9vh;
+    position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
     top: 0;
-    left: 0; */
+    left: 0;
 }
 
 .nav-list {
@@ -92,7 +93,7 @@ li a:hover {
         flex-direction: column;
         align-items: center;
         background-color: #fff;
-        height: 14vh;
+        height: 16vh;
     }
     .nav-list {
         margin-top: 6px;
@@ -101,11 +102,15 @@ li a:hover {
     .nav-list li{
         margin-left: 14px;
     }
+    .banner img {
+        width: 100%;
+        margin-top: 14vh;
+    }
 }
 
 .banner img {
     width: 100%;
-    /*margin-top: 30px;*/
+    /* margin-top: 50px; */
     margin-bottom: 90px;
 }
 /* Fim Header */
@@ -586,7 +591,7 @@ label {
 }
 
 input, textarea {
-    border-radius: 2px;
+    border-radius: 4px;
     height: 40px;   
     font-size: 14px;
     width: 300px;
@@ -616,6 +621,52 @@ textarea {
     height: 4em;
     resize: vertical;
 }
+
+.form-control.success textarea {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error textarea {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/*.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}*/
 
 .button-form button {
     border: none;
@@ -720,6 +771,77 @@ i {
     font-weight: 400;
 }
 /*Fim Contatos Map*/
+
+/*Inicio Button Whatsapp*/
+.whats-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #3BD12A;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 44px;
+    z-index: 1000;
+}
+
+.whats-button::before,
+.whats-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    border: 2px solid #3BD12A;
+    animation: animate-button-whats 1.5s linear infinite;
+}
+
+@keyframes animate-button-whats {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+.whats-icon {
+    color: #fff;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 670px){
+    .whats-button {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #3BD12A;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 38px;
+        z-index: 1000;
+    }
+
+    .whats-icon {
+        color: #fff;
+        margin-top: 7px;
+        margin-right: 12px;
+    }
+}
+/*Inicio Button Whatsapp*/
+
 
 /*Inicio Footer*/
 footer {

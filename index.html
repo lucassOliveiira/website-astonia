@@ -340,26 +340,33 @@
             </div>
             <div class="container-contact">
                 <div class="contact" id="contact">
-                    <form action="" method="">
+                    <form id="form" action="https://formsubmit.co/lucas10.oc@hotmail.com" method="post">
                         <div class="text-forms">
                             <h2>Contato</h2>
                             <p>Entre em contato conosco agora mesmo</p>
                         </div>
-                        <div>
+                        <div class="form-control">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" placeholder="Nome" />
+                            <input type="text" id="name" name="nome" placeholder="Nome" />
+                            <small>Error Message</small>
                         </div>
-                        <div>
+                        <div class="form-control">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" placeholder="E-mail" />
+                            <input type="text" id="email" name="email" placeholder="E-mail" />
+                            <small>Error Message</small>
                         </div>
-                        <div>
+                        <div class="form-control">
                             <label for="telefone">Telefone</label>
-                            <input type="number" id="telefone" placeholder="Telefone" />
+                            <input type="number" id="telefone" name="telefone" placeholder="Telefone" />
+                            <small>Error Message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="msg">Mensagem</label>
+                            <textarea type="text" id="msg" name="mensagem" placeholder="Deixe sua Mensagem"></textarea>
+                            <small>Error Message</small>
                         </div>
                         <div>
-                            <label for="msg">Mensagem</label>
-                            <textarea type="text" id="msg" placeholder="Deixe sua Mensagem"></textarea>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/../obrigado/obrigado.html">
                         </div>
                         <div class="button-form">
                             <button type="submit">Enviar</button>
@@ -401,6 +408,7 @@
                     <span><i class="fa-brands fa-square-instagram"></i> @astoniaembalagens</span>
                 </div>
             </div>
+            <a class="whats-button" href="https://api.whatsapp.com/send?phone=5511959732702" target="_blank"><i class="whats-icon fa fa-whatsapp"></i></a> 
     </main>
     <footer>
         <div class="content-footer">
@@ -438,6 +446,7 @@
     </footer>
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="form-validate.js"></script>
 </body>
 
 </html>
