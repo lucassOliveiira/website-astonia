@@ -53,6 +53,20 @@ header {
     padding: 5px;
 }
 
+.max {
+    height: 9vh;
+    background-color: #fff;
+}
+
+.min {
+    height: 7vh;
+    background-color: #fff;
+}
+
+.logo-astonia {
+    transition: all .5s ease-in-out;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -65,6 +79,7 @@ nav {
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
     top: 0;
     left: 0;
+    transition: all .5s ease-in-out;
 }
 
 .nav-list {
@@ -343,10 +358,15 @@ li a:hover {
     width: 70px;
     height: 70px;
     border-radius: 100px;
+    transition: all 0.3s;
 }
 
 .container-spans img {
     border-radius: 100px;
+}
+
+.container-spans .spans:hover {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.90);
 }
 /* Fim Solutions */
 
