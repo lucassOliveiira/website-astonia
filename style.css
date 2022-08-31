@@ -91,6 +91,10 @@ nav {
     margin-left: 30px;
 }
 
+.nav-list li:first-child {
+    margin: 0;
+}
+
 li a {
     color: var(--fonts-color);
     text-decoration: none;
@@ -123,7 +127,7 @@ li a:hover {
         margin-bottom: 8px;
     }
     .nav-list li{
-        margin: 0 8px;
+        margin-left: 8px;
     }
     .banner img {
         width: 100%;
@@ -132,7 +136,7 @@ li a:hover {
 }
 @media screen and (max-width: 500px){
     .nav-list li{
-        margin: 0 2px;
+        margin-left: 4.5px;
     }
 }
 
