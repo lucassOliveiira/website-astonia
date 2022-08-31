@@ -8,6 +8,8 @@
     <title>Astonia Embalagens</title>
     <link rel="shortcut icon" href="images-astonia/favicon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/3c8fff345c.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='//code.jquery.com/jquery-compat-git.js'></script>
+    <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js'></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
@@ -340,7 +342,7 @@
             </div>
             <div class="container-contact">
                 <div class="contact" id="contact">
-                    <form id="form" action="https://formsubmit.co/lucas10.oc@hotmail.com" method="post">
+                    <form id="form" onsubmit="return checkInputs()" action="https://formsubmit.co/lucas10.oc@hotmail.com" method="post">
                         <div class="text-forms">
                             <h2>Contato</h2>
                             <p>Entre em contato conosco agora mesmo</p>
@@ -357,7 +359,7 @@
                         </div>
                         <div class="form-control">
                             <label for="telefone">Telefone</label>
-                            <input type="number" id="telefone" name="telefone" placeholder="Telefone" />
+                            <input type="text" id="telefone" name="telefone" class="phone" placeholder="Telefone" />
                             <small>Error Message</small>
                         </div>
                         <div class="form-control">

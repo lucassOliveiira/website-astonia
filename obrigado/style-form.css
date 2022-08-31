@@ -21,7 +21,9 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--fonts-color);
 }
 
@@ -33,20 +35,45 @@ p {
     text-align: center;
 }
 
-.center h2{
+.center h2 {
     font-size: 36px;
     font-weight: 700;
     line-height: 41px;
     margin-bottom: 30px;
 }
 
-.center p{
+.center p {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 60px;
 }
+
+.center span {
+    color: var(--desc-color);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 60px;
+}
+
 /* Fim Configs Globais */
+.button-home {
+    margin-top: 30px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: var(--blue-color);
+    border-radius: 7px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-home:hover {
+    background-color: #2773b6;
+}
 
 /* Inicio Header */
 header {
@@ -59,7 +86,7 @@ nav {
     align-items: center;
     background-color: #fff;
     height: 8vh;
-/*  position: fixed;
+    /*  position: fixed;
     width: 100%;
     z-index: 1;
     top: 0;
@@ -85,7 +112,7 @@ li a:hover {
     opacity: 0.8;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
     nav {
         display: flex;
         justify-content: center;
@@ -94,11 +121,13 @@ li a:hover {
         background-color: #fff;
         height: 14vh;
     }
+
     .nav-list {
         margin-top: 6px;
         margin-bottom: 8px;
     }
-    .nav-list li{
+
+    .nav-list li {
         margin-left: 14px;
     }
 }
@@ -107,202 +136,8 @@ li a:hover {
     width: 100%;
     margin-bottom: 90px;
 }
+
 /* Fim Header */
-
-/* Incio Product Info */
-.container {
-    width: 100%;
-    max-width: 1200px;
-}
-
-.product-info {
-    display: flex;
-    justify-content: center;
-}
-
-.product-info img {
-    border: 1px solid black;
-    width: 250px;
-    height: 250px;
-}
-
-.center {
-    margin-bottom: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.product-info p {
-    margin-bottom: 15px;
-    margin-left: 30px;
-}
-
-.sizes{
-    border: 1px solid black;
-    border-radius: 50px;
-    color: #000;
-    max-width: fit-content;
-    padding: 2px 4px;
-    text-align: center;
-}
-/* Fim Product Info */
-
-/* Incio Form */
-.contact {
-    margin: -8% 44%;
-    max-width: 650px;
-    width: 100%;
-    margin-bottom: 120px;
-/*     position: absolute;
-    left: 43.7%;
-    top: 68%; */
-}
-
-form {
-    padding: 1em;
-}
-
-/* form div + div {
-    margin-top: 1em;
-} */
-
-input, textarea {
-    border-radius: 2px;
-    height: 40px;   
-    font-size: 14px;
-    width: 300px;
-    border: 1px solid #000;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), white);
-}
-
-input:focus, textarea:focus {
-    border: 1px solid var(--desc-color);
-}
-
-input[type=text] {
-    padding-left: 18px;
-    color: black;
-    width: 100%;
-    outline: 0;
-}
-
-textarea {  
-    outline: 0;
-    padding-top: 8px;
-    padding-left: 18px;
-    width: 100%;
-    vertical-align: top;
-    height: 4em;
-    resize: vertical;
-}
-
-.form-control.success textarea {
-    border: 3px solid #4ECA64;
-}
-
-.form-control.error textarea {
-    border: 3px solid #DB5A5A;
-}
-
-.form-control.success input {
-    border: 3px solid #4ECA64;
-}
-
-.form-control.error input {
-    border: 3px solid #DB5A5A;
-}
-
-.form-control.error small{
-    color: #DB5A5A;
-    visibility: visible;
-    display: block;
-    margin: 0;
-    margin-bottom: 8px;
-}
-
-.form-control small {
-    visibility: hidden;
-    /* position: absolute; */
-    font-size: 14px;
-}
-
-.container-button {
-    position: relative;
-}
-
-.button-form button {
-    border: none;
-    font-size: 16px;
-    color: #fff;
-    padding: 8px 16px;
-    background-color: var(--blue-color);
-    border-radius: 7px;
-    width: 30%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button-form button:hover {
-    background-color: #2773b6;
-}
-
-.button-whats button{
-    border: none;
-    font-size: 16px;
-    color: #fff;
-    padding: 8px 16px;
-    background-color: #3BD12A;
-    border-radius: 7px;
-    width: 30%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-}
-
-.button-whats button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.button-whats button:hover {
-    background-color: #28bd17;
-}
-
-.numbers {
-    text-align: right;
-    margin: -8% 0;
-}
-
-.numbers span{
-    color: var(--desc-color);
-}
-
-@media screen and (max-width: 1172px){
-    .contact {
-        width: 100%;
-        margin: 30px auto;
-    }
-    .product-info img {
-        margin-left: 10px;
-    }
-
-    .text p{
-        margin: 15px;
-    }
-}
-
-@media screen and (max-width: 670px){
-    .numbers {
-        display: inline-block;
-        margin-top: 15px;
-    }
-}
-/* Fim Form */
 
 /*Inicio Slider Products*/
 .slide-container {
@@ -326,7 +161,7 @@ textarea {
     align-items: center;
 }
 
-.card .card-content{
+.card .card-content {
     height: 290px;
     width: 290px;
     margin: 0 auto;
@@ -346,7 +181,7 @@ textarea {
     object-fit: cover;
 }
 
-.sizes{
+.sizes {
     border: 1px solid black;
     color: #000;
     border-radius: 50px;
@@ -425,11 +260,12 @@ textarea {
     background-color:  var(--yellow-color);
 }*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .slide-content {
         margin: 0 10px;
     }
 }
+
 /*Fim Slider Products*/
 
 i {
@@ -471,9 +307,11 @@ i {
         transform: scale(0.5);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         transform: scale(1.1);
         opacity: 0;
@@ -486,7 +324,7 @@ i {
     margin-right: 16px;
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 670px) {
     .whats-button {
         position: fixed;
         width: 50px;
@@ -507,6 +345,7 @@ i {
         margin-right: 12px;
     }
 }
+
 /*Inicio Button Whatsapp*/
 
 /*Inicio Footer*/
@@ -573,7 +412,8 @@ footer {
     margin-right: 8px;
 }
 
-@media screen and (max-width: 840px){
+@media screen and (max-width: 840px) {
+
     .footer-contact,
     .footer-products {
         margin-top: 24px;

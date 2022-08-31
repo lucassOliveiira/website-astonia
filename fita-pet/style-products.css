@@ -112,7 +112,8 @@ li a:hover {
 /* Incio Product Info */
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .product-info {
@@ -121,6 +122,7 @@ li a:hover {
 }
 
 .product-info img {
+    float: left;
     border: 1px solid black;
     width: 250px;
     height: 250px;
@@ -146,15 +148,28 @@ li a:hover {
     padding: 2px 4px;
     text-align: center;
 }
+
+@media screen and (max-width: 1000px){
+    .product-info {
+        display: block;
+    }
+    .product-info img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sizes {
+        display: flex;
+    }
+}
 /* Fim Product Info */
 
 /* Incio Form */
 .contact {
-    margin: -8% 44%;
+    margin: -12% 29%;
     max-width: 650px;
     width: 100%;
     margin-bottom: 120px;
-/*     position: absolute;
+/*  position: absolute;
     left: 43.7%;
     top: 68%; */
 }
@@ -185,8 +200,21 @@ input[type=text] {
     color: black;
     width: 100%;
     outline: 0;
+}   
+
+/* input#email {
+    float: right;
+    margin-left: 20%;
 }
 
+input[type=number], 
+input[type=email] {
+    outline: 0;
+    padding-left: 18px;
+    color: black;
+    width: 40%;
+}
+ */
 textarea {  
     outline: 0;
     padding-top: 8px;
@@ -275,7 +303,7 @@ textarea {
 
 .numbers {
     text-align: right;
-    margin: -8% 0;
+    margin: -6% 0;
 }
 
 .numbers span{
@@ -285,7 +313,7 @@ textarea {
 @media screen and (max-width: 1172px){
     .contact {
         width: 100%;
-        margin: 30px auto;
+        margin: 0 auto;
     }
     .product-info img {
         margin-left: 10px;
@@ -294,6 +322,12 @@ textarea {
     .text p{
         margin: 15px;
     }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        margin-top: 14%;
+    } 
 }
 
 @media screen and (max-width: 670px){
@@ -584,6 +618,6 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-}
+}   
 
-/*Fim Footer*/
+/*Fim Footer*/  

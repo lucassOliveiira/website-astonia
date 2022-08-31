@@ -38,7 +38,7 @@ function checkInputs() {
         // add classe
         setErrorFor(telefone, 'Preencha esse campo')
         return false
-    }  else {
+    } else {
         // adicionar a classe de sucesso
         setSuccessFor(telefone)
     }

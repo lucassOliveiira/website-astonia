@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitilho Retorcido</title>
+    <link rel="shortcut icon" href="../images-astonia/favicon.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3c8fff345c.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='//code.jquery.com/jquery-compat-git.js'></script>
+    <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js'></script>
+    <link rel="stylesheet" href="style-products.css">
+    <link rel="stylesheet" href="../swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo-astonia" src="../images-astonia/logo-astonia.png" alt="Astonia"
+                    title="Astonia"></a>
+            <ul class="nav-list">
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner" id="banner">
+            <img src="../images-astonia/capaProdutos.jpg" alt="Banner Astonia" title="Astonia Embalagens">
+        </div>
+        <div class="center">
+            <h2>Fitilho Retorcido</h2>
+        </div>
+        <div class="container">
+            <div class="product-info">
+                <img src="../images-astonia/fitilho-retocido.png" alt="Fitilho Retorcido" title="Fitilho Retorcido">
+                <div class="text">
+                    <p>Matéria-prima: Polipropileno (PP) Reciclado</p>
+                    <p>Peso (por rolo): 7 kg</p>
+                    <p class="sizes">F40 BT e F60 FR</p>
+                    <p>Preencha nosso formulário abaixo para uma cotação:</p>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <form id="form" onsubmit="return checkInputs()" action="https://formsubmit.co/lucas10.oc@hotmail.com" method="post">
+                    <div class="form-control">
+                        <input type="text" id="name" name="nome" placeholder="Nome" />
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="email" placeholder="E-mail" name="email"/>
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="telefone" placeholder="Telefone" class="phone" name="telefone" />
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">  
+                        <textarea type="text" id="msg" placeholder="Deixe sua Mensagem" name="mensagem"></textarea>
+                        <small>Error Message</small>
+                    </div>
+                    <div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/../obrigado/obrigado.html">
+                    </div>
+                    <div class="container-button">
+                        <div class="button-form">
+                            <button type="submit">Enviar</button>
+                        </div>
+                        <div class="button-whats">
+                            <button><a href="https://api.whatsapp.com/send?phone=5511959732702" target="blank">Whatsapp</a></button>
+                        </div>
+                        <div class="numbers">
+                            <span>OU LIGUE:</span>
+                            <span>(11) 2954-6344</span>
+                            <p>(11) 2954-1478</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/fitilho-reciclado.png" alt="Fitilho Comum Reciclado"
+                                    title="Fitilho Comum Reciclado">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">F02 • F05 • F10 • F20 • F30 • F40</p>
+                                <h2 class="name">Fitilho Comum Reciclado</h2>
+                                <p class="description">O fitilho comum é excelente para facilitar amarrações em
+                                    volumes de diversas formas.</p>
+                                <a href="../fitilho-comum-reciclado/fitilho-comum-reciclado.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/plastico-bolha.png" alt="Plástico Bolha" title="Plástico Bolha">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">1,30m x 100m</p>
+                                <h2 class="name">Plástico Bolha</h2>
+                                <p class="description">O plástico bolha é fabricado com Polietileno de baixa densidade. Os plásticos confeccionados com bolhas são atóxicos, com transparência de 75% e sem emissão de cheiros.</p>
+                                <a href="../plastico-bolha/plastico-bolha.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/fita-pet.png" alt="Fita Pet & Acessórios"
+                                    title="Fita Pet & Acessórios">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">13mm x 0,8 • 16mm x 0,8 • 19mm x 1,0</p>
+                                <h2 class="name">Fita PET & Acessórios</h2>
+                                <p class="description">A fita PET é facilmente aplicada manualmente e automaticamente. Devido a sua alta resistência, é usada na substituição das fitas de aço com menor custo.</p>
+                                <a href="../fita-pet/fita-pet.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/fita-adesiva.png" alt="Fita Adesiva" title="Fita Adesiva">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">12mm • 24mm • 45mm • 48mm</p>
+                                <h2 class="name">Fita Adesiva</h2>
+                                <p class="description">Fita Adesiva transparente ou marrom com alta resistência e adesivo reforçado</p>
+                                <a href="../fita-adesiva/fita-adesiva.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/fita-phoenix.png" alt="Fita Phoenix (PP)" title="Fita Phoenix (PP)">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">7mm • 10mm • 12mm</p>
+                                <h2 class="name">Fita Phoenix (PP)</h2>
+                                <p class="description">Ótimo fechamento e lacração em caixas de papelão e outros materiais. As fitas Phoenix são utilizadas em máquinas semi automáticas.</p>
+                                <a href="../fita-phoenix/fita-phoenix.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/fita-plastica.png" alt="Fita Plástica & Acessórios" title="Fita Plástica & Acessórios">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">10 mm • 13 mm • 16 mm</p>
+                                <h2 class="name">Fita Plástica & Acessórios</h2>
+                                <p class="description">Com material reciclado, a fita de arqueação oferece excelentes resultados para ser usada com fivelas e selos metálicos.</p>
+                                <a href="../fita-plastica/fita-plastica.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/fitilho-branco-reciclado.png" alt="Fitilho Comum Reciclado Branco" title="Fitilho Comum Reciclado Branco">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">F02 • F10</p>
+                                <h2 class="name">Fitilho Comum Reciclado Branco</h2>
+                                <p class="description">O fitilho comum branco é excelente para facilitar amarrações em volumes de diversas formas. <br />Usado também na agricultura.</p>
+                                <a href="../fitilho-comum-branco/fitilho-comum-branco.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/fitilho-retocido.png" alt="Fitilho Retocido" title="Fitilho Retocido">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">F140 BT • F60 FR</p>
+                                <h2 class="name">Fitilho Retorcido</h2>
+                                <p class="description">O Fitilho retorcido é feito de Polipropileno (PP) reciclado ideal para amarrar fardos prensados que exigem muita resistência.</p>
+                                <a href="../fitilho-retorcido/fitilho-retorcido.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="../images-astonia/fita-dba.png" alt="Fita DBA" title="Fita DBA">
+                            </div>
+                            <div class="card-content">
+                                <p class="sizes">10mm /12mm X 0,8</p>
+                                <h2 class="name">Fita DBA</h2>
+                                <p class="description">A fita DBA é fabricada com polipropileno virgem que garante ótimo desempenho na arqueação com máquina automática.</p>
+                                <a href="../fita-dba/fita-dba.html"><button class="button">Detalhes</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <a class="whats-button" href="https://api.whatsapp.com/send?phone=5511959732702" target="_blank"><i class="whats-icon fa fa-whatsapp"></i></a>
+    </main>
+    <footer>
+        <div class="content-footer">
+            <div class="footer-text">
+                <h2>Astonia Embalagens</h2>
+                <p>Especializada na fabricação de todos os tipos de fitas e filmes para fechamento de embalagens em matérias plásticas novas ou recicladas, hoje, é considerada uma das melhores do mercado graças à tecnologia e critério com fornecedores.</p>
+                <span>Rua Urvana N 152 • Cidade Industrial Satélite -Guarulhos • Cep 07223-370 • São Paulo • SP • Brasil</span>
+            </div>
+            <div class="footer-products">
+                <h2>Produtos</h2>
+                <ul>
+                    <li><a href="fita-pet/fita-pet.html">Fita Pet</a></li>
+                    <li><a href="fita-dba/fita-dba.html">Fita DBA</a></li>
+                    <li><a href="fita-adesiva/fita-adesiva.html">Fita Adesiva</a></li>
+                    <li><a href="plastico-bolha/plastico-bolha.html">Plástico Bolha</a></li>
+                    <li><a href="fitilho-retorcido/fitilho-retorcido.html">Fitilho Retorcido</a></li>
+                    <li><a href="fita-phoenix/fita-phoenix.html">Fita Phoenix (PP)</a></li>
+                    <li><a href="fitilho-comum-reciclado/fitilho-comum-reciclado.html">Fitilho Comum Reciclado</a></li>
+                    <li><a href="fitilho-comum-branco/fitilho-comum-branco.html">Fitilho Comum Reciclado Branco</a></li>                   
+                    <li><a href="fita-plastica/fita-plastica.html">Fita Plástica & Acessórios para Arquear</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h2>Contato</h2>
+                <span><i class="fa-solid fa-envelope"></i> milene@astonia.com</span>
+                <span><i class="fa-brands fa-facebook"></i> Astonia Embalagens LTDA</span>
+                <span><i class="fa-brands fa-square-whatsapp"></i> (11) 98218-3300</span>
+                <span><i class="fa-brands fa-square-instagram"></i> @astoniaembalagens</span>
+                <span><i class="fa-solid fa-phone"></i> (11) 2954-6344</span>
+                <span><i class="fa-solid fa-phone"></i> (11) 2954-1478</span>
+                <span><i class="fa-solid fa-phone"></i> (11) 2954-9457</span>
+                <span><i class="fa-solid fa-phone"></i> (11) 2954-4043</span>
+            </div>
+        </div>
+    </footer>
+    <script src="../swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="../form-validate.js"></script>
+</body>
+
+</html>

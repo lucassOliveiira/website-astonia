@@ -653,21 +653,6 @@ textarea {
     font-size: 14px;
 }
 
-/*.form-control.error i.img-error {
-    visibility: visible;
-}
-
-.form-control.success i.img-success {
-    visibility: visible;
-}
-
-.form-control i {
-    position: absolute;
-    top: 45px;
-    right: 10px;
-    visibility: hidden;
-}*/
-
 .button-form button {
     border: none;
     font-size: 16px;

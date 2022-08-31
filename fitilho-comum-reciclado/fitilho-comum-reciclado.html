@@ -8,6 +8,8 @@
     <title>Fitilho Comum Reciclado</title>
     <link rel="shortcut icon" href="../images-astonia/favicon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/3c8fff345c.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='//code.jquery.com/jquery-compat-git.js'></script>
+    <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js'></script>
     <link rel="stylesheet" href="style-products.css">
     <link rel="stylesheet" href="../swiper-bundle.min.css">
 </head>
@@ -43,18 +45,25 @@
                 </div>
             </div>
             <div class="contact" id="contact">
-                <form action="" method="">
-                    <div>
-                        <input type="text" id="name" placeholder="Nome" />
+                <form id="form" onsubmit="return checkInputs()" action="https://formsubmit.co/lucas10.oc@hotmail.com" method="post">
+                    <div class="form-control">
+                        <input type="text" id="name" name="nome" placeholder="Nome" />
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="email" placeholder="E-mail" name="email"/>
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="telefone" placeholder="Telefone" class="phone" name="telefone" />
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">  
+                        <textarea type="text" id="msg" placeholder="Deixe sua Mensagem" name="mensagem"></textarea>
+                        <small>Error Message</small>
                     </div>
                     <div>
-                        <input type="email" id="email" placeholder="E-mail" />
-                    </div>
-                    <div>
-                        <input type="number" id="telefone" placeholder="Telefone" />
-                    </div>
-                    <div>
-                        <textarea type="text" id="msg" placeholder="Deixe sua Mensagem"></textarea>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/../obrigado/obrigado.html">
                     </div>
                     <div class="container-button">
                         <div class="button-form">
@@ -240,6 +249,7 @@
     </footer>
     <script src="../swiper-bundle.min.js"></script>
     <script src="../script.js"></script>
+    <script src="../form-validate.js"></script>
 </body>
 
 </html>
