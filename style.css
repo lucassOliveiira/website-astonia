@@ -132,7 +132,7 @@ li a:hover {
 }
 @media screen and (max-width: 500px){
     .nav-list li{
-        margin: 0 4.5px;
+        margin: 0 2px;
     }
 }
 
