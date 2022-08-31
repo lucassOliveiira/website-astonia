@@ -110,6 +110,10 @@ li a:hover {
         background-color: #fff;
         height: 16vh;
     }
+     .min,
+     .max {
+        height: 16vh;
+    }
     .nav-list {
         margin-top: 6px;
         margin-bottom: 8px;
