@@ -59,11 +59,6 @@ nav {
     align-items: center;
     background-color: #fff;
     height: 8vh;
-/*  position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0; */
 }
 
 .nav-list {
@@ -285,21 +280,23 @@ textarea {
 @media screen and (max-width: 1172px){
     .contact {
         width: 100%;
-        margin: 30px auto;
-    }
-    .product-info img {
-        margin-left: 10px;
-    }
-
-    .text p{
-        margin: 15px;
+        /* margin: 30px 0; */
+        margin: 0 auto;
     }
 }
-
 @media screen and (max-width: 670px){
     .numbers {
         display: inline-block;
         margin-top: 15px;
+    }
+    .product-info img {
+        margin-left: 15px;
+    }
+    .product-info {
+        display: block;
+    }
+    .text p{
+        margin: 15px;
     }
 }
 /* Fim Form */

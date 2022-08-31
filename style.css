@@ -104,26 +104,34 @@ li a:hover {
 @media screen and (max-width: 850px){
     nav {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         flex-direction: column;
         align-items: center;
         background-color: #fff;
         height: 16vh;
     }
-     .min,
-     .max {
+    .min {
         height: 16vh;
+        padding-top: 22px;
+    }
+     .max {
+        height: 14vh;
     }
     .nav-list {
         margin-top: 6px;
         margin-bottom: 8px;
     }
     .nav-list li{
-        margin-left: 14px;
+        margin: 0 8px;
     }
     .banner img {
         width: 100%;
-        margin-top: 14vh;
+        margin-top: 12vh;
+    }
+}
+@media screen and (max-width: 500px){
+    .nav-list li{
+        margin: 0 4.5px;
     }
 }
 
