@@ -110,12 +110,13 @@ li a:hover {
         background-color: #fff;
         height: 16vh;
     }
-    .min {
+    /*.min {
         height: 16vh;
         padding-top: 22px;
-    }
+    } */
+     .min,
      .max {
-        height: 14vh;
+        height: 15vh;
     }
     .nav-list {
         margin-top: 6px;
