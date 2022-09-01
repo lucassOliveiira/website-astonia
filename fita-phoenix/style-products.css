@@ -123,6 +123,7 @@ li a:hover {
 
 .product-info img {
     float: left;
+    margin-left: 10px;
     border: 1px solid black;
     width: 250px;
     height: 250px;
