@@ -286,7 +286,8 @@ li a:hover {
 
     .container-icons {
         width: 300px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
