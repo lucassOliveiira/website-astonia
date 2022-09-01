@@ -17,6 +17,7 @@
 
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -46,6 +47,7 @@ p {
     line-height: 18px;
     margin-bottom: 60px;
 }
+
 /* Fim Configs Globais */
 
 /* Inicio Header */
