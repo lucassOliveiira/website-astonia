@@ -47,16 +47,7 @@ p {
     margin-bottom: 60px;
 }
 /* Fim Configs Globais */
-@media screen and (max-width: 400px){
-    body {
-        width: 100vw;
-    }
-}
-@media screen and (max-width: 320px){
-    body {
-        width: 100vw;
-    }
-}
+
 /* Inicio Header */
 header {
     padding: 5px;
