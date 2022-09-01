@@ -118,7 +118,9 @@ li a:hover {
         height: 16vh;
         padding-top: 22px;
     } */
-     .min,
+     .min {
+        height: 13vh;
+     }
      .max {
         height: 15vh;
     }
@@ -348,6 +350,9 @@ li a:hover {
 }
 
 @media screen and (max-width: 1005px){
+    .solutions {
+        margin: 15px;
+    }
     .container-solutions {
         display: grid;
     }
@@ -511,6 +516,10 @@ li a:hover {
 @media screen and (max-width: 768px){
     .slide-content {
         margin: 0 10px;
+    }
+    .swiper-navBtn {
+        display: none;
+        opacity: 0;
     }
 }
 /*Fim Slider Products*/
