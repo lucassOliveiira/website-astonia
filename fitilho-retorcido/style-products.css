@@ -146,6 +146,22 @@ li a:hover {
     padding: 2px 4px;
     text-align: center;
 }
+@media screen and (max-width: 700px){
+    .product-info {
+        display: block;
+    }
+    .product-info img {
+        float: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .text p{
+        margin: 15px;
+    }
+    .sizes {
+        display: flex;
+    }
+}
 /* Fim Product Info */
 
 /* Incio Form */
@@ -154,18 +170,11 @@ li a:hover {
     max-width: 650px;
     width: 100%;
     margin-bottom: 120px;
-/*     position: absolute;
-    left: 43.7%;
-    top: 68%; */
 }
 
 form {
     padding: 1em;
 }
-
-/* form div + div {
-    margin-top: 1em;
-} */
 
 input, textarea {
     border-radius: 2px;
@@ -223,7 +232,6 @@ textarea {
 
 .form-control small {
     visibility: hidden;
-    /* position: absolute; */
     font-size: 14px;
 }
 
@@ -282,17 +290,10 @@ textarea {
     color: var(--desc-color);
 }
 
-@media screen and (max-width: 1172px){
+@media screen and (max-width: 880px){
     .contact {
         width: 100%;
-        margin: 30px auto;
-    }
-    .product-info img {
-        margin-left: 10px;
-    }
-
-    .text p{
-        margin: 15px;
+        margin: 0 auto;
     }
 }
 

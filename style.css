@@ -124,12 +124,12 @@ li a:hover {
      .max {
         height: 15vh;
     }
-    .nav-list {
+/*     .nav-list {
         margin-top: 6px;
         margin-bottom: 8px;
-    }
+    } */
     .nav-list li{
-        margin-left: 8px;
+        margin-left: 16px;
     }
     .banner img {
         width: 100%;

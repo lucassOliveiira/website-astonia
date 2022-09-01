@@ -149,13 +149,17 @@ li a:hover {
     text-align: center;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 700px){
     .product-info {
         display: block;
     }
     .product-info img {
+        float: none;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .text p{
+        margin: 15px;
     }
     .sizes {
         display: flex;
@@ -323,11 +327,11 @@ textarea {
         margin: 15px;
     }
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 880px){
     .contact {
-        margin-top: 14%;
-    } 
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 670px){
