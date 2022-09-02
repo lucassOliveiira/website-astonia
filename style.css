@@ -15,7 +15,6 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
-
 }
 
 h1, h2, h3 {
@@ -43,12 +42,16 @@ p {
     line-height: 18px;
     margin-bottom: 60px;
 }
-main {
-    max-width: 100vw;
-}
 /* Fim Configs Globais */
 
 /* Inicio Header */
+.main {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 header {
     padding: 5px;
 }
@@ -139,7 +142,6 @@ li a:hover {
 
 .banner img {
     width: 100%;
-    /* margin-top: 50px; */
     margin-bottom: 90px;
 }
 /* Fim Header */
@@ -498,29 +500,6 @@ li a:hover {
     color: #2773b6;
 }
 
-/* .swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 40px;
-}
-
-.swiper-button-next {
-    color: var(--blue-color);
-    right: 0;
-}
-
-.swiper-button-prev {
-    color: var(--blue-color);
-    left: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color:  var(--yellow-color);
-    opacity: 1;
-}
-.swiper-pagination-bullet-active {
-    background-color:  var(--yellow-color);
-}*/
-
 @media screen and (max-width: 768px){
     .slide-content {
         margin: 0 10px;
@@ -607,6 +586,7 @@ li a:hover {
 
 /* Inicio Contact & Map */
 .container-contact {
+    width: 100%;
     max-width: 1536px;
     display: flex;
     justify-content: center;
@@ -636,10 +616,6 @@ li a:hover {
     margin-bottom: 30px;
 }
 
-form {
-    padding: 1em;
-}
-
 form div + div {
     margin-top: 1em;
 }
@@ -652,10 +628,11 @@ label {
 }
 
 input, textarea {
+    box-sizing: border-box;
     border-radius: 4px;
     height: 40px;   
     font-size: 14px;
-    width: 300px;
+    /* width: 300px; */
     border: 1px solid #000;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.1), white);
 }
@@ -664,9 +641,7 @@ input:focus, textarea:focus {
     border: 1px solid var(--desc-color);
 }
 
-input[type=text],
-input[type=number], 
-input[type=email] {
+input[type=text] {
     outline: 0;
     padding-left: 18px;
     color: black;
@@ -681,6 +656,10 @@ textarea {
     vertical-align: top;
     height: 4em;
     resize: vertical;
+}
+
+.form-control {
+    position: relative;
 }
 
 .form-control.success textarea {
@@ -721,6 +700,7 @@ textarea {
     padding: 8px 16px;
     background-color: var(--blue-color);
     border-radius: 7px;
+    box-sizing: border-box;
     width: 100%;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -748,7 +728,11 @@ textarea {
     }
 
     .contact {
-        margin: 20px 0;
+        box-sizing: border-box;
+        margin: 20px;
+    }
+    input, textarea {
+        width: 100% !important;
     }
 }
 
@@ -762,11 +746,11 @@ textarea {
 .objective-text h2 {
     font-size: 32px;
     font-weight: 700;
-    line-height: 2.5em;
+    margin-bottom: 30px;
 }
 
 .objective-text p {
-    line-height: 1.4em;
+    margin-top: 8px;
 }
 /* Fim Contact & Map */
 
