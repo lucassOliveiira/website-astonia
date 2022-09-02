@@ -14,11 +14,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-
-}
-
-html {
     scroll-behavior: smooth;
+
 }
 
 h1, h2, h3 {
@@ -45,6 +42,9 @@ p {
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 60px;
+}
+main {
+    max-width: 100vw;
 }
 /* Fim Configs Globais */
 
@@ -107,27 +107,20 @@ li a:hover {
 
 @media screen and (max-width: 850px){
     nav {
+        width: 100%;
         display: flex;
-        justify-content: start;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         background-color: #fff;
         height: 16vh;
     }
-    /*.min {
-        height: 16vh;
-        padding-top: 22px;
-    } */
      .min {
         height: 13vh;
      }
      .max {
         height: 15vh;
     }
-/*     .nav-list {
-        margin-top: 6px;
-        margin-bottom: 8px;
-    } */
     .nav-list li{
         margin-left: 16px;
     }
@@ -138,9 +131,11 @@ li a:hover {
 }
 @media screen and (max-width: 500px){
     .nav-list li{
-        margin-left: 4.5px;
+        margin-left: 8px;
+        font-size: 13px;
     }
 }
+
 
 .banner img {
     width: 100%;
@@ -352,14 +347,22 @@ li a:hover {
 
 @media screen and (max-width: 1005px){
     .solutions {
-        margin: 15px;
+        margin: 0 auto;
     }
     .container-solutions {
         display: grid;
+        margin: 0 auto;
     }
 
     .cards-solutions {
-        margin: 16px;
+        width: 100%;
+        margin: 16px auto
+    }
+}
+@media screen and (max-width: 376px){
+    .cards-solutions{
+        width: 90%;
+        margin: 16px auto
     }
 }
 
@@ -460,6 +463,10 @@ li a:hover {
     text-align: center;
 }
 
+.center-slider {
+    margin-top: 104px;
+}
+
 
 .button {
     border: none;
@@ -550,6 +557,12 @@ li a:hover {
 }
 
 @media screen and (max-width: 800px){
+    .container-clients {
+        margin: 0 auto;
+    }
+    .clients {
+        width: 100%;
+    }
     .clients img {
         margin: 20px 15px;
     }
@@ -558,6 +571,7 @@ li a:hover {
 
 /* Inicio Production */
 .production {
+    width: 100%;
     margin-bottom: 120px;
     background-color: var(--yellow-color);
 }
@@ -829,7 +843,7 @@ i {
     top: -10px;
     border-radius: 50%;
     border: 2px solid #3BD12A;
-    animation: animate-button-whats 1.5s linear infinite;
+    animation: animate-button-whats 1.5s linear infinite; 
 }
 
 @keyframes animate-button-whats {
@@ -864,6 +878,7 @@ i {
         text-align: center;
         font-size: 38px;
         z-index: 1000;
+        
     }
 
     .whats-icon {
