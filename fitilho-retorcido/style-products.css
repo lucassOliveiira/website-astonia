@@ -61,11 +61,6 @@ nav {
     align-items: center;
     background-color: #fff;
     height: 8vh;
-/*  position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0; */
 }
 
 .nav-list {
@@ -257,7 +252,8 @@ textarea {
     background-color: #2773b6;
 }
 
-.button-whats button{
+.button-whats a{
+    text-align: center;
     border: none;
     font-size: 16px;
     color: #fff;
@@ -274,12 +270,12 @@ textarea {
     margin: 0 auto;
 }
 
-.button-whats button a {
+.button-whats a {
     text-decoration: none;
     color: #fff;
 }
 
-.button-whats button:hover {
+.button-whats a:hover {
     background-color: #28bd17;
 }
 
@@ -404,29 +400,6 @@ textarea {
 .swiper-navBtn:hover {
     color: #2773b6;
 }
-
-/* .swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 40px;
-}
-
-.swiper-button-next {
-    color: var(--blue-color);
-    right: 0;
-}
-
-.swiper-button-prev {
-    color: var(--blue-color);
-    left: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color:  var(--yellow-color);
-    opacity: 1;
-}
-.swiper-pagination-bullet-active {
-    background-color:  var(--yellow-color);
-}*/
 
 @media screen and (max-width: 768px){
     .slide-content {
@@ -588,5 +561,4 @@ footer {
         align-items: center;
     }
 }
-
 /*Fim Footer*/

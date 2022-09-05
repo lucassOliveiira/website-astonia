@@ -5,7 +5,7 @@
     --yellow-color: #EFCE53;
     --back-div-color: #F3F3F3;
     --fonts-color: #3C3C3C;
-    --desc-color: #606060;
+    --desc-color: #474747;
 }
 
 /* Configs Globais */
@@ -50,10 +50,6 @@ p {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-}
-
-header {
-    padding: 5px;
 }
 
 .max {
@@ -129,11 +125,11 @@ li a:hover {
     }
     .banner img {
         width: 100%;
-        margin-top: 12vh;
+        margin-top: 14vh;
     }
 }
 @media screen and (max-width: 500px){
-    .nav-list li{
+    .nav-list li {
         margin-left: 8px;
         font-size: 13px;
     }
@@ -295,6 +291,10 @@ li a:hover {
         margin: 10px;
         padding: 10px;
         max-width: 300px;
+    }
+    .differentials h2{
+        margin-bottom: 30px;
+        font-size: 28px;
     }
 }
 /* Fim Differentials */

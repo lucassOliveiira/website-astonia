@@ -59,11 +59,6 @@ nav {
     align-items: center;
     background-color: #fff;
     height: 8vh;
-/*  position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0; */
 }
 
 .nav-list {
@@ -174,18 +169,11 @@ li a:hover {
     max-width: 650px;
     width: 100%;
     margin-bottom: 120px;
-/*  position: absolute;
-    left: 43.7%;
-    top: 68%; */
 }
 
 form {
     padding: 1em;
 }
-
-/* form div + div {
-    margin-top: 1em;
-} */
 
 input, textarea {
     border-radius: 2px;
@@ -207,19 +195,6 @@ input[type=text] {
     outline: 0;
 }   
 
-/* input#email {
-    float: right;
-    margin-left: 20%;
-}
-
-input[type=number], 
-input[type=email] {
-    outline: 0;
-    padding-left: 18px;
-    color: black;
-    width: 40%;
-}
- */
 textarea {  
     outline: 0;
     padding-top: 8px;
@@ -256,7 +231,6 @@ textarea {
 
 .form-control small {
     visibility: hidden;
-    /* position: absolute; */
     font-size: 14px;
 }
 
@@ -280,7 +254,8 @@ textarea {
     background-color: #2773b6;
 }
 
-.button-whats button{
+.button-whats a{
+    text-align: center;
     border: none;
     font-size: 16px;
     color: #fff;
@@ -297,12 +272,12 @@ textarea {
     margin: 0 auto;
 }
 
-.button-whats button a {
+.button-whats a {
     text-decoration: none;
     color: #fff;
 }
 
-.button-whats button:hover {
+.button-whats a:hover {
     background-color: #28bd17;
 }
 
@@ -427,29 +402,6 @@ textarea {
 .swiper-navBtn:hover {
     color: #2773b6;
 }
-
-/* .swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 40px;
-}
-
-.swiper-button-next {
-    color: var(--blue-color);
-    right: 0;
-}
-
-.swiper-button-prev {
-    color: var(--blue-color);
-    left: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color:  var(--yellow-color);
-    opacity: 1;
-}
-.swiper-pagination-bullet-active {
-    background-color:  var(--yellow-color);
-}*/
 
 @media screen and (max-width: 768px){
     .slide-content {
@@ -611,5 +563,4 @@ footer {
         align-items: center;
     }
 }   
-
 /*Fim Footer*/  
