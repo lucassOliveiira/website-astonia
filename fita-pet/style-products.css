@@ -406,6 +406,12 @@ textarea {
     .slide-content {
         margin: 0 10px;
     }
+    .swiper-navBtn {
+        visibility: hidden;
+    }
+    .center-slider h2 {
+        font-size: 30px;
+    }
 }
 /*Fim Slider Products*/
 
@@ -548,6 +554,15 @@ footer {
 .footer-products li::before {
     content: '•';
     margin-right: 8px;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s;
+}
+.footer-contact a:hover {
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 840px){

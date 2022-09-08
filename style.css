@@ -527,8 +527,7 @@ li a:hover {
         margin: 0 10px;
     }
     .swiper-navBtn {
-        display: none;
-        opacity: 0;
+        visibility: hidden;
     }
     .center-slider h2 {
         font-size: 30px;
@@ -663,7 +662,6 @@ input, textarea {
     border-radius: 4px;
     height: 40px;   
     font-size: 14px;
-    /* width: 300px; */
     border: 1px solid #000;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.1), white);
 }
@@ -827,17 +825,26 @@ textarea {
     padding-bottom: 30px;
 }
 
-i {
-    color: var(--yellow-color);
-    width: 20px;
-}
-
 .contact-map span {
     margin-left: 15px;
     display: inline-block;
     padding-top: 12px;
     font-size: 16px;
     font-weight: 400;
+}
+
+.contact-map a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.4s;
+}
+.contact-map a:hover {
+    opacity: 0.8;
+}
+
+i {
+    color: var(--yellow-color);
+    width: 20px;
 }
 /*Fim Contatos Map*/
 
@@ -975,6 +982,15 @@ footer {
 .footer-products li::before {
     content: '•';
     margin-right: 8px;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s;
+}
+.footer-contact a:hover {
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 840px){

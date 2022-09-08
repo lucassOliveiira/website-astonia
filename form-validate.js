@@ -11,45 +11,33 @@ function checkInputs() {
     const msgValue = msg.value.trim()
 
     if(nomeValue === '') {
-        // mostrar erro
-        // add classe
         setErrorFor(nome, 'Preencha esse campo')
         return false
     } else {
-        // adicionar a classe de sucesso
         setSuccessFor(nome)
     }
 
     if(emailValue === '') {
-        // mostrar erro
-        // add classe
         setErrorFor(email, 'Preencha esse campo')
         return false
     } else if (!isEmail(emailValue)) {
         setErrorFor(email, 'Email inválido')
         return false
     } else {
-        // adicionar a classe de sucesso
         setSuccessFor(email)
     }
    
     if(telefoneValue === '') {
-        // mostrar erro
-        // add classe
         setErrorFor(telefone, 'Preencha esse campo')
         return false
     }  else {
-        // adicionar a classe de sucesso
         setSuccessFor(telefone)
     }
 
     if(msgValue === '') {
-        // mostrar erro
-        // add classe
         setErrorFor(msg, 'Preencha esse campo')
         return false
     } else {
-        // adicionar a classe de sucesso
         setSuccessFor(msg)
     }
 }
